@@ -2,7 +2,13 @@
 <div class='forma'>
 <h1>Unesite kod sa kartice</h1>
 <%= form_for :code, url: kod_path do |f|%>
-<%=f.text_field :sifra, required:true%><br>
-<%=f.submit 'Generiši QR kod'%>
+<div class="input-group">
+<%=f.text_field :sifra, class: "form-control", placeholder: "Unesite kod sa tiketa",required:true%><br>
+
+<span class="input-group-btn">
+<%=f.submit 'Go', type: "button", class:"btn btn-default"%>
+</span>
+</div>
 <%end%>
 <div>
+
