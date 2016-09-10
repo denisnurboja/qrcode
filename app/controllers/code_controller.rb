@@ -1,7 +1,7 @@
 class CodeController < ApplicationController
   def page
   	@sifra = params[:sifra]
-  	@qr = RQRCode::QRCode.new( "smsto:+387832004:#{params[:sifra]}", :size => 4, :level => :h )
+  	@qr = RQRCode::QRCode.new( "smsto:+387832004:#{params[:sifra]}", :size => 3, :level => :h )
 
   end
   def new

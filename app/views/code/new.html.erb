@@ -3,7 +3,7 @@
 <h1>Unesite kod sa kartice</h1>
 <%= form_for :code, url: kod_path do |f|%>
 <div class="input-group">
-<%=f.text_field :sifra, class: "form-control", placeholder: "Unesite kod sa tiketa",required:true%><br>
+<%=f.text_field :sifra, class: "form-control", placeholder: "Unesite kod sa tiketa",maxlength: "6", required:true%><br>
 
 <span class="input-group-btn">
 <%=f.submit 'Go', type: "button", class:"btn btn-default"%>
