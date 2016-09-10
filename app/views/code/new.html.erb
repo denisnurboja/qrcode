@@ -1,0 +1,8 @@
+
+<div class='forma'>
+<h1>Unesite kod sa kartice</h1>
+<%= form_for :code, url: kod_path do |f|%>
+<%=f.text_field :sifra, required:true%><br>
+<%=f.submit 'Generiši QR kod'%>
+<%end%>
+<div>
